@@ -1,0 +1,43 @@
+Code,Prompts,Scale
+Episode Number,"Identify and segment the group session into distinct episodes. An episode is a continuous sequence of interaction characterized by a single dominant purpose (e.g., problem-focused or helping). 
+
+- Assign an episode number to each segment.
+- Consecutive remarks that belong to the same episode must share the same episode number.
+- Change the episode number only when there is a clear shift in topic, focus, or interaction goal.
+- Episodes must not overlap; each remark can belong to only one episode.",Episode #
+Episode Type,"Within the same episode, what type of episode is it? (select all that apply)
+
+1 = Topical Episode (A topic is discussed in a general or informational way, without a specific personal concern or goal requiring resolution.)
+2 = Problem Episode (A participant expresses a personal concern, challenge, or goal, and the group engages in attempts to support or resolve it.)
+3 = Framing Episode (The session structure is defined or clarified (e.g., rules, goals, agenda, time limits, transitions))
+4 = Rapport Building (Interaction aimed at building trust, emotional connection, or group cohesion (e.g., encouragement, empathy, validation))
+5 = Instrumental Episode (Practical or technical issues unrelated to session content (e.g., logging in, audio problems))
+6 = Random Chit-Chat (Casual conversation unrelated to session goals or participant concerns (e.g., small talk))","1= Topical episode 
+2 = Problem episode 
+3 = Framing episode
+4 = Rapport building
+5 = Instrumental episode
+6 = Random chit-chat"
+Episode Summary,Proivde Brief episode summary only when the episode number changes,One or two sentences describing what occurred
+Episode Resolution,"Episode resolution: If the episode is a problem episode, is a solution identified at the end of the
+episode?","1 = yes, 0 = no"
+Satisfaction,"Satisfaction: If the episode is a problem episode, does the participant express satisfaction with the
+identified solution? ","1 = yes, 0 = no"
+Relief Response,"Relief response: If the episode is a problem episode, does the participant express relief with the
+identified solution?","1 = yes, 0 = no"
+Action Plan,"Action plan: If the episode is a problem episode, is there a clear action plan at the end?","1 = yes, 0 = no"
+Phase,"Segment each episode into functional phases: Introduction, development, or closure ","1= introduction
+2 = development
+3 = closure"
+Turn (timestamp) ,"Break each phase into turns, attributed to specific speakers",Timestamp
+Turn Number,Turn Number: Enter number ,integer
+Turn Selection,Is the turn self-selected or selected by others?,"1 = self-selected, 0 = selected by others"
+Turn Assigner,"If the turn is given by somebody else, by whom? Indicate Speaker ID. (If it is self-selected skip this question)",Speaker ID
+Problem Addressed,Does the speaker seem to have problems in their lives that most people would agree should be addressed?,"1 = yes, 0 = no"
+Behavior Encouragement,Does the speaker encourage a specific behavior? ,"1 = yes, 0 = no"
+Goal Push,Does the speaker push others to accomplish their goals? ,"1 = yes, 0 = no"
+Emotion,Does the speaker explicitly discuss another's emotion? ,"1 = yes, 0 = no"
+Empathy,Is empathy conveyed? ,"1 = yes, 0 = no"
+Negativity Addition,Does the speaker respond to partner negativity with additional negativity? ,"1 = yes, 0 = no"
+Apology,Does the speaker apologize? ,"1 = yes, 0 = no"
+Reflective Question,Does the speaker ask a reflective question? ,"1 = yes, 0 = no"
